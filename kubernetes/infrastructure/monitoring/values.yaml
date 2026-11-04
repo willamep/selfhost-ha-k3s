@@ -81,7 +81,7 @@ grafana:
 
   grafana.ini:
     server:
-      root_url: "https://grafana.avocatocat.ru"
+      root_url: "https://grafana.willamep.tech"
 
   # Настройка Ingress для Traefik, принимающего расшифрованный HTTP-трафик
   ingress:
@@ -89,7 +89,7 @@ grafana:
     ingressClassName: traefik
     annotations: {}
     hosts:
-      - "grafana.avocatocat.ru"
+      - "grafana.willamep.tech"
     path: /
     tls: []
 

@@ -1,14 +1,16 @@
 caddy_email: "{{ vault_caddy_email }}"
 caddy_routes:
-  - host: grafana.avocatocat.ru
+  - host: dnd.willamep.tech
     upstream: 192.168.3.252
-  - host: argocd.avocatocat.ru
+  - host: grafana.willamep.tech
     upstream: 192.168.3.252
-  - host: tic-tac-toe.avocatocat.ru
+  - host: argocd.willamep.tech
     upstream: 192.168.3.252
-  - host: cloud.avocatocat.ru
+  - host: tic-tac-toe.willamep.tech
+    upstream: 192.168.3.252
+  - host: cloud.willamep.tech
     upstream: 192.168.3.206:8080
-  - host: print.avocatocat.ru
+  - host: print.willamep.tech
     upstream: 192.168.3.16
 
 
@@ -18,7 +20,7 @@ nfs_share:
 
 
 # Nextcloud: выделенная ВМ (docker compose)
-nextcloud_domain: "cloud.avocatocat.ru"
+nextcloud_domain: "cloud.willamep.tech"
 nextcloud_admin_user: "Avocato"
 nextcloud_admin_password: "{{ vault_nextcloud_admin_password }}"
 nextcloud_db_password: "{{ vault_nextcloud_db_password }}"
@@ -53,4 +55,4 @@ localhost_kubeconfig: "~/.kube/config"
 
 argocd_gitops_repo_url: https://github.com/willamep/selfhost-ha-k3s
 argocd_gitops_repo_revision: main
-argocd_domain: "argocd.avocatocat.ru"
+argocd_domain: "argocd.willamep.tech"

@@ -51,7 +51,7 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-    - host: "tic-tac-toe.avocatocat.ru"
+    - host: "tic-tac-toe.willamep.tech"
       http:
         paths:
           - path: /
